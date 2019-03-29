@@ -1,0 +1,838 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Global Tours a Travel Category Bootstrap responsive Website Template | Home :: w3layouts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="keywords" content="Global Tours Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- bootstrap-css -->
+<link href="/static/cssw/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!--// bootstrap-css -->
+<!-- css -->
+<link rel="stylesheet" href="/static/cssw/style.css" type="text/css" media="all" />
+<!--// css -->
+<!-- font-awesome icons -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome icons -->
+<!-- gallery -->
+<link rel="stylesheet" href="/static/cssw/lightbox.css">
+<!-- //gallery -->
+<!-- font -->
+<link href="//fonts.googleapis.com/css?family=Kaushan+Script&amp;subset=latin-ext" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='text/css'>
+<!-- //font -->
+<script src="/static/jsw/jquery-1.11.1.min.js"></script>
+<script src="/static/jsw/bootstrap.js"></script>
+<script type="text/javascript">
+  jQuery(document).ready(function($) {
+    $(".scroll").click(function(event){   
+      event.preventDefault();
+      $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+    });
+  });
+</script> 
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<![endif]-->
+</head>
+<body>
+  <div class="banner-top">
+    <div class="slider">
+      <div class="callbacks_container">
+        <ul class="rslides callbacks callbacks1" id="slider4">
+          <li>
+            <div class="w3layouts-banner-top">
+              <div class="container">
+                <div class="agileits-banner-info">
+                  <h3>W</h3>
+                  <h4>Wayanad</h4>
+                </div>  
+              </div>
+            </div>
+          </li>
+           <li>
+            <div class="w3layouts-banner-top w3layouts-banner-top1">
+              <div class="container">
+                <div class="agileits-banner-info1">
+                  <h3>B</h3>
+                  <h4>Banasura Sagar Dam, Kalpetta</h4>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="w3layouts-banner-top w3layouts-banner-top2">
+              <div class="container">
+                <div class="agileits-banner-info2">
+                  <h3>C</h3>
+                  <h4>Chembra Peak</h4>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="w3layouts-banner-top w3layouts-banner-top3">
+              <div class="container">
+                <div class="agileits-banner-info3">
+                  <h3>K</h3>
+                  <h4>Kuruva Island</h4>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="w3layouts-banner-top w3layouts-banner-top4">
+              <div class="container">
+                <div class="agileits-banner-info4">
+                  <h3>E</h3>
+                  <h4>Edakkal Caves</h4>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div> 
+      <div class="clearfix"> </div>
+      <script src="/static/jsw/responsiveslides.min.js"></script>
+      <script>
+            // You can also use "$(window).load(function() {"
+            $(function () {
+              // Slideshow 4
+              $("#slider4").responsiveSlides({
+              auto: true,
+              pager:true,
+              nav:false,
+              speed: 500,
+              namespace: "callbacks",
+              before: function () {
+                $('.events').append("<li>before event fired.</li>");
+              },
+              after: function () {
+                $('.events').append("<li>after event fired.</li>");
+              }
+              });
+          
+            });
+      </script>
+      <!--banner Slider starts Here-->
+    </div>
+  </div>
+  <!-- banner -->
+  <div class="banner">
+    <div class="header">
+      <div class="container">
+        <div class="header-left">
+          <div class="w3layouts-logo">
+            <h1>
+              <a href="index.html">!ncredible Kerala <span>Tours</span></a>
+            </h1>
+          </div>
+        </div>
+        <!-- <div class="header-right">
+          <p><i class="fa fa-phone" aria-hidden="true"></i> +1 234 567 8901</p>
+        </div> -->
+        <div class="clearfix"> </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <div class="top-nav">
+            <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li><a  href="{% url 'home' %}">Home</a></li>
+                  <li><a href="#about" class="scroll">About</a></li>
+                  <li><a href="#services" class="scroll">Services</a></li>
+                  <li><a href="#gallery" class="scroll">Gallery</a></li>
+                  <li><a href="#news" class="scroll">News</a></li>
+                  <li><a  href="{% url 'contacts' %}" class="scroll">Contact</a></li>
+                </ul> 
+                <div class="clearfix"> </div>
+              </div>  
+            </nav>    
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //banner -->
+  <!-- about -->
+  <div class="about" id="about">
+    <div class="w3-about-top">
+      <h3>A</h3>
+    </div>
+    <div class="w3l-about">
+      <div class="container">
+        <div class="w3ls-heading">
+          <h2>About Us</h2>
+        </div>
+        <div class="w3ls-about-info">
+          <p>Wayanad is a rural district in Kerala state, southwest India. In the east, the Wayanad Wildlife Sanctuary is a lush, forested region with areas of high altitude, home to animals including Asiatic elephants, tigers, leopards and egrets. In the Ambukuthi Hills to the south, Edakkal Caves contain ancient petroglyphs, some dating back to the Neolithic age.</p>
+          <div class="w3ls-about-grids">
+            <div class="col-md-3 w3ls-about-grid">
+              <img src="/static/imagesw/a1.jpg" alt="" />
+            </div>
+            <div class="col-md-3 w3ls-about-grid">
+              <img src="/static/imagesw/a2.jpg" alt="" />
+            </div>
+            <div class="col-md-3 w3ls-about-grid">
+              <img src="/static/imagesw/a3.jpg" alt="" />
+            </div>
+            <div class="col-md-3 w3ls-about-grid">
+              <img src="/static/imagesw/a4.jpg" alt="" />
+            </div>
+            <div class="clearfix"> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //about -->
+  <!-- services -->
+  <div class="services" id="services">
+    <div class="w3-services-top">
+      <h3>S</h3>
+    </div>
+    <div class="w3l-about w3l-services">
+      <div class="container">
+        <div class="w3ls-heading">
+          <h3>Services</h3>
+        </div>
+        <div class="agileits-services-grids">
+          <div class="col-md-4 agileits-services-grid">
+            <i class="fa fa-bus" aria-hidden="true"></i>
+            <h4>Etymology</h4>
+            <p>The name ‘Wayanad’ is derived from ‘Vayal Nadu’ which translates to ‘the land of paddy fields’ in English.</p>
+          </div>
+          <div class="col-md-4 agileits-services-grid">
+            <i class="fa fa-credit-card" aria-hidden="true"></i>
+            <h4>History</h4>
+            <p>Historians believes that the human settlement existed in these parts for at least ten centuries before Christ. Much evidence of New Stone Age civilisation can be seen in the hills throughout the present day Wayanad district. The Edakkal Caves have 6000 year old rock engravings from the Neolithic age. Recorded history of this district is available only from the 18th century. In ancient times, this land was ruled by the Rajas of the Veda tribe</p>
+
+<p>The Kutumbiyas (Kudumbiyas):
+
+The two caves of Ampukuthimala (Edakal Caves) in Sulthan Bathery, with pictures on their walls and pictorial writings, speak volumes of a bygone civilisation. At the foot of the Edakal Male (hill) caves, Kannada inscriptions belonging to Canarese chieftain Vishnu Varma of Kutumbiya (Kudumbiya) clan of Mysore dating to c. 5th century CE were discovered which read - 'Palapulitaanamtakaari' or 'Pala pulinânam ta-kâri', Sri Vishnu Varma Kutumbiya Kulavardhanasya li..it..a..'. As per Hultzch, an epigraphist from the department of epigraphy, Madras, it speaks of the glorious descendant of Kutumbiya clan, Kannada chieftain, Vishnu Varma, as one who killed many tigers. Some scholars speculate this Kutumba clan to be the same as the Kurumbas found there.</p>
+
+<p>The Kadambas:
+
+In the 11th century AD, Gangas were dethroned from Bayalnad by Kadamba dynasty of North Canara.[14] Wayanad was at that time divided into two portions - Bira Bayalnad and Chagi Bayalnad. One of the Mysore inscriptions (alluding perhaps to the treacherous beauty of the country, which attracted the stranger and then laid him low with malaria) says 'an adulteress with black waving curls, as adulteress with full-moon face, an adulteress with endless side-glances, an adulteress with adorned slim figure was this storeyed mansion, the double Bayalnad'. Kadamba Bayalnad emerged as a rule in the 11th century under their chief Raviyammarasa with Kirttipura in Punnad their capital. Kanthirava (1090 CE) was described as ruling Chagi-Bayalnad. Iravi-Challamma (1108 CE) was the ruler of Bira-Bayalnad.</p>
+
+The Hoysalas:
+
+<p>In 1104 AD Vishnuvardhana of Hoysala invaded Bayalnad followed by Vijayanagara dynasty in the 14th century. A Kadamba king, Mukkanna-Kadamba ruled Bayal-nad in and around 1138 CE.</p>
+
+<p>The Vijayanagara empire:
+
+A feudatory chieftain of Sangama dynasty of Vijaynagar, Immadi Kadamba Raya Vodeyayya of Bayalnad Kadambas, is said to have ruled Bayalnad.</p>
+
+<p>The Mysore Wodeyars and the Sultans:
+
+In 1610 AD Udaiyar Raja Wadiyar of Mysore drove out Vijayanagara General and became the ruler of Bayalnad and the Nilgiris. Bayalnad is the present Wayanad. When Wayanad was under Hyder Ali's rule, the ghat road from Vythiri to Thamarassery was constructed. Then the British rulers developed this route to Carter road. When Wayanad was under Tipu Sultan's rule British invasion started. Tussle and turbulent times followed. The British claimed Wayanad under the 1792 treaty of Srirangapatna citing it was part of Malabar. Tipu Sultan went in appeal before the Governor General. Considering his arguments, relying on the successive Karnataka rule for centuries in Wayanad and its geographical detachment from Malabar, in 1798, Governor General Lord Mornington declared by proclamation that Wayanad had not been ceded to the East India Company by the treaty of 1792. Consequently, the British troops withdrew from Wayanad conceding to Tipu's rule. In 1799, after the fall of Sultan, the British handed over Wayanad by the treaty of 1799 to the Raja of Mysore. But by a supplementary treaty dated 29 December 1803 the East India Company repossessed Wayanad and thereafter administrated by Col. Arthur Wellesley from Srirangapatna and North Wayanad came under the rule of the Pazhassi Raja dynasty of ancient Kottayam.</p>.
+<p>British Rule:
+
+In the end, the British could get only the dead body of the Rajah, who killed himself somewhere in the interior of the forest. Thus, Wayanad fell into the hands of the British and with it came a new turn in the home of this area. The British authorities opened up the plateau to the cultivation of tea and other cash crops by constructing roads across the dangerous slopes of Wayanad, to Kozhikode and Thalassery. Later, they extended these new roads to the cities of Mysore and Ooty through Gudalur. Settlers emigrated from all parts of Kerala and the fecund lands proved a veritable goldmine with incredible yields of cash crops. Agriculture Cultivation started broadly after 1900 A.D onwards. Wayanad eventually became part of Kerala despite its geographical delimitations and political descent in 1956 on State's reorganisation. Even now there is a considerable Kannada speaking population and the reminiscence of centuries old Karnataka rule is omnipresent in Wayanad. When the State of Kerala came into being in November 1956, Wayanad was part of Kannur district. Later, south Wayanad was added to Kozhikode district. To fulfil the aspirations of the people of Wayanad for development, North Wayanad and South Wayanad were carved out and joined together to form the present district of Wayanad. This district came into being on 1 November 1980 as one the twelve districts of Kerala, consisting of three taluks; Vythiri, Mananthavady, and Sulthan Bathery. </p>
+          </div>
+          <div class="col-md-4 agileits-services-grid">
+            <i class="fa fa-gift" aria-hidden="true"></i>
+            <h4>Tribals in Wayanad</h4>
+            <p>The Wayanad have the largest tribal population in Kerala with 8 scheduled tribes including Adiyan, Paniyan, Mullukkurman, Kurichyan, Vettakkuruman Wayanad Kadar, Kattuniakkan and Thachaanadan Mooppan. These communities have a number of symbolic oral narratives</p>
+
+</p>Adiyan: Adiyans are a matrilineal Tribal group, who were treated as bonded slave labourers by the landlords up to 1976. Now majority of them are agricultural labourers and some of them are marginal agriculturalist. They spoke Adiya language as their mother tongue.</p>
+
+</p>Kattuniakkan: A particularly Vulnerable Tribal group of Wayanad. Jenu Kurumban and Ten Kurumban are the synonyms used for the Kattunayakan community. They spoke Kattunaikka language a dialect of Kannada and Malayalam. They are patrilineal and a forest dwelling, hunting and gathering community.This is the largest population among PVTG in Kerala with a total population of19995 (Male- 9953, Female-10042)</p>
+
+</p>Kurichyan: Majority of them are agriculturalists and well versed in hunting with bows and arrows.[citation needed] Their dialect is known as Kurichya language. They are known for their matrilineal social organization.[citation needed] They are the second largest community among Scheduled Tribes with a total population of 35909 (Male- 18129, Female-17780)</p>
+
+</p>Mullukkurman: A patrilineal and patrilocal tribal agriculturalist community found in Wayanad. The community members are expert in hunting and their spoken language is Mullukkuruma language. The total population is 21375 (Male- 10625, female-10750)[22]
+
+</p>Paniyan: A Patrilinial slave tribe community until 1976s Bonded labour act, distributed in Wayanad, Kannur, Kozhikkod and Malappuram. They are the largest single tribal community with a population of 92787 (Male-45112, female- 47675). Their language is a dialect known as Paniya Language and nowadays they are agricultural labourers</p>
+
+</p>Thachaanadan Mooppan: Thachaanadan Mooppan is a matrilineal community. In earlier days they are shifting cultivators and hunters. Nowadays they earn through agricultural labour work. They are expert in carpentry and basket making. Their total population is 1649, and consists of 814 males and 835 females.</p>
+
+</p>Vettakkuruman: Vettakkuruman also a patrilineal tribal community. They are the artisan tribes and well versed in pottery, carpentry, blacksmithry and tools making and Basketry.[citation needed] Their language is known as Bettakkuruma language. The population of Vettakuruman is 6482 consisting of 3193 males and 3289 females.</p>
+
+</p>Wayanad Kadar: They are found in Kozhikkode and Wayanad district and entirely a different generic stock from Kaders of Cochin. They are matrilineal marginal tribes with a population of 673 consists of 348 males and 325 females.</p>
+</p>
+          </div>
+          <div class="col-md-4 agileits-services-grid">
+            <i class="fa fa-plane" aria-hidden="true"></i>
+            <h4>Geography</h4>
+            <p>Wayanad district stands on the southern tip of the Deccan plateau and includes part of the Western Ghats. Quite a large area of the district is covered by forest but the continued and indiscriminate exploitation of the natural resources point towards an imminent[ environmental crisis. There are a lot of trekking points in this district. Chembra Peak (2,100m) is the highest peak in the Wayanad district. Banasura Hill (2,079m) is also similar to height of Chembra hill.
+
+The district is blessed with rich water resources. There are east flowing and west flowing rivers in the region.One of the major rivers in the district is Kabini River, a tributary of River Kaveri; it is also one of the only three east flowing rivers in Kerala. Kabani has many tributaries including Thirunelli River, Panamaram River and Mananthavady River. All these rivulets help form a rich water resource as well as a distinct landscape for the district. Various streams flow into the Panamaram rivulet while it passes through the mountain gorges and finally the river falls down into Panamaram Valley. After flowing through the district for a certain distance, River Panamaram joins Mananthavady River, which originates from the lower regions of the peak called 'Thondarmudi'. </p>
+          </div>
+          <div class="col-md-4 agileits-services-grid">
+            <i class="fa fa-subway" aria-hidden="true"></i>
+            <h4>Dams in Wayanad</h4>
+            <p>Wayanad has plenty of dams and check dams.
+<p>
+Banasura Sagar Dam across the Karamanathodu River, a tributary of River Kabini, in Kalpetta, is considered to be the largest earth dam in India and the second largest in Asia. The dam is ideally placed in the foothills of Banasura hills, which got its name from 'Banasura', the son of King Mahabali, the famous ruler of Kerala. The dam here was constructed on behalf of the Banasurasagar project in 1979, to support the Kakkayam Hydroelectric power project to meet the water demand for irrigation and drinking purposes. The dam, located around 21 km away from Kalpetta is a tourist destination in Wayanad. Banasura dam is made up of massive stacks of stones and boulders.</p>
+<p>Karapuzha Dam
+
+<p>Karapuzha Dam is considered to be one of the biggest earth dams in India, which has been constructed on the Karapuzha River, a tributary of the Kabini River. Vazhavatta in Vythiri taluk of Wynad district for providing irrigation to an area of 5580 ha (CCA) say 5600 hectare in Vythiri and Sultan Bathery taluks of Wynad district of Kerala. The reservoir has a gross storage capacity of 76.50 M Cum and live storage capacity of 72.00 M Cum. </p>
+          </div>
+          <div class="col-md-4 agileits-services-grid">
+            <i class="fa fa-ship" aria-hidden="true"></i>
+            <h4>Economy</h4>
+            <p>Agriculture is the backbone of the economy of the district. Most of the lands in the district are use for agricultural purposes. More than half of its population are engaged in agriculture in order to earn their livelihood. The chief agricultural crops in the district are Coffee, tea, cocoa, pepper, plantain, vanilla, rice, coconut, cardamom, tea, ginger, etc. Wayanad is known for its rice production. The two rice of the district namely Wayanad Jeerakasala rice and Wayanad Gandhakasala rice has their different properties. Another source of economy in the district is the cattle farming. The tourism sector of the district is very developed and every year a huge chunk of revenue comes from this sector helps in its economy to a great extent. The district is scantily industrialised. In the name of industry, there is only Wayanad dairy of Milma (Kerala Co-operative Milk Marketing Federation) at Kalpetta and a few small scale industries. In 2006, the Ministry of Panchayati Raj named Wayanad one of the country's 250 most backward districts (out of a total of 640). It is one of the two districts in Kerala currently receiving funds from the Backward Regions Grant Fund Programme (BRGF). In the year 2016-17 (QE) the gross domestic product in the district was Rs 1,107,058 lakhs at current price.</p>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //services -->
+  <!-- gallery -->
+  <div class="gallery" id="gallery">
+    <div class="w3-gallery-top">
+      <h3>G</h3>
+    </div>
+    <div class="w3l-about w3l-gallery">
+      <div class="container">
+        <div class="w3ls-heading">
+          <h3>Gallery</h3>
+        </div>
+        <div class="gallery-grids">
+            <div class="col-md-3 gallery-grid">
+              <div class="grid">
+                <figure class="effect-apollo">
+                  <a class="example-image-link" href="images/g1.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor. Cras euismod egestas enim eget molestie. Aenean ornare condimentum odio, in lacinia felis finibus non. Nam faucibus libero et lectus finibus, sed porttitor velit pellentesque.">
+                    <img src="/static/imagesw/g1.jpg" alt="" />
+                    <figcaption>
+                    </figcaption> 
+                  </a>
+                </figure>
+              </div>
+            </div>
+            <div class="col-md-3 gallery-grid">
+              <div class="grid">
+                <figure class="effect-apollo">
+                  <a class="example-image-link" href="images/g2.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor. Cras euismod egestas enim eget molestie. Aenean ornare condimentum odio, in lacinia felis finibus non. Nam faucibus libero et lectus finibus, sed porttitor velit pellentesque.">
+                    <img src="/static/imagesw/g2.jpg" alt="" />
+                    <figcaption>
+                    </figcaption> 
+                  </a>
+                </figure>
+              </div>
+            </div>
+            <div class="col-md-3 gallery-grid">
+              <div class="grid">
+                <figure class="effect-apollo">
+                  <a class="example-image-link" href="images/g3.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor. Cras euismod egestas enim eget molestie. Aenean ornare condimentum odio, in lacinia felis finibus non. Nam faucibus libero et lectus finibus, sed porttitor velit pellentesque.">
+                    <img src="/static/imagesw/g3.jpg" alt="" />
+                    <figcaption>
+                    </figcaption>   
+                  </a>
+                </figure>
+              </div>
+            </div>
+            <div class="col-md-3 gallery-grid">
+              <div class="grid">
+                <figure class="effect-apollo">
+                  <a class="example-image-link" href="images/g4.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor. Cras euismod egestas enim eget molestie. Aenean ornare condimentum odio, in lacinia felis finibus non. Nam faucibus libero et lectus finibus, sed porttitor velit pellentesque.">
+                    <img src="/static/imagesw/g4.jpg" alt="" />
+                    <figcaption>
+                    </figcaption> 
+                  </a>
+                </figure>
+              </div>
+            </div>
+            <div class="col-md-3 gallery-grid">
+              <div class="grid">
+                <figure class="effect-apollo">
+                  <a class="example-image-link" href="images/g5.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor. Cras euismod egestas enim eget molestie. Aenean ornare condimentum odio, in lacinia felis finibus non. Nam faucibus libero et lectus finibus, sed porttitor velit pellentesque.">
+                    <img src="/static/imagesw/g5.jpg" alt="" />
+                    <figcaption>
+                    </figcaption> 
+                  </a>
+                </figure>
+              </div>
+            </div>
+            <div class="col-md-3 gallery-grid">
+              <div class="grid">
+                <figure class="effect-apollo">
+                  <a class="example-image-link" href="images/g6.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor. Cras euismod egestas enim eget molestie. Aenean ornare condimentum odio, in lacinia felis finibus non. Nam faucibus libero et lectus finibus, sed porttitor velit pellentesque.">
+                    <img src="/static/imagesw/g6.jpg" alt="" />
+                    <figcaption>
+                    </figcaption>   
+                  </a>
+                </figure>
+              </div>
+            </div>
+            <div class="col-md-3 gallery-grid">
+              <div class="grid">
+                <figure class="effect-apollo">
+                  <a class="example-image-link" href="images/g7.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor. Cras euismod egestas enim eget molestie. Aenean ornare condimentum odio, in lacinia felis finibus non. Nam faucibus libero et lectus finibus, sed porttitor velit pellentesque.">
+                    <img src="/static/imagesw/g7.jpg" alt="" />
+                    <figcaption>
+                    </figcaption> 
+                  </a>
+                </figure>
+              </div>
+            </div>
+            <div class="col-md-3 gallery-grid">
+              <div class="grid">
+                <figure class="effect-apollo">
+                  <a class="example-image-link" href="images/g1.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor. Cras euismod egestas enim eget molestie. Aenean ornare condimentum odio, in lacinia felis finibus non. Nam faucibus libero et lectus finibus, sed porttitor velit pellentesque.">
+                    <img src="/static/imagesw/g1.jpg" alt="" />
+                    <figcaption>
+                    </figcaption> 
+                  </a>
+                </figure>
+              </div>
+            </div>
+            <div class="col-md-3 gallery-grid">
+              <div class="grid">
+                <figure class="effect-apollo">
+                  <a class="example-image-link" href="images/g2.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor. Cras euismod egestas enim eget molestie. Aenean ornare condimentum odio, in lacinia felis finibus non. Nam faucibus libero et lectus finibus, sed porttitor velit pellentesque.">
+                    <img src="/static/imagesw/g2.jpg" alt="" />
+                    <figcaption>
+                    </figcaption>   
+                  </a>
+                </figure>
+              </div>
+            </div>
+            <div class="col-md-3 gallery-grid">
+              <div class="grid">
+                <figure class="effect-apollo">
+                  <a class="example-image-link" href="images/g3.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor. Cras euismod egestas enim eget molestie. Aenean ornare condimentum odio, in lacinia felis finibus non. Nam faucibus libero et lectus finibus, sed porttitor velit pellentesque.">
+                    <img src="/static/imagesw/g3.jpg" alt="" />
+                    <figcaption>
+                    </figcaption>   
+                  </a>
+                </figure>
+              </div>
+            </div>
+            <div class="col-md-3 gallery-grid">
+              <div class="grid">
+                <figure class="effect-apollo">
+                  <a class="example-image-link" href="images/g4.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor. Cras euismod egestas enim eget molestie. Aenean ornare condimentum odio, in lacinia felis finibus non. Nam faucibus libero et lectus finibus, sed porttitor velit pellentesque.">
+                    <img src="/static/imagesw/g4.jpg" alt="" />
+                    <figcaption>
+                    </figcaption>   
+                  </a>
+                </figure>
+              </div>
+            </div>
+            <div class="col-md-3 gallery-grid">
+              <div class="grid">
+                <figure class="effect-apollo">
+                  <a class="example-image-link" href="images/g5.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor. Cras euismod egestas enim eget molestie. Aenean ornare condimentum odio, in lacinia felis finibus non. Nam faucibus libero et lectus finibus, sed porttitor velit pellentesque.">
+                    <img src="/static/imagesw/g5.jpg" alt="" />
+                    <figcaption>
+                    </figcaption>   
+                  </a>
+                </figure>
+              </div>
+            </div>
+            <div class="clearfix"> </div>
+            <script src="/static/jsw/lightbox-plus-jquery.min.js"> </script>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //gallery -->
+  <!-- testimonial -->
+  <div class="testimonial">
+    <div class="w3-testimonial-top">
+      <h3>T</h3>
+    </div>
+    <div class="w3l-about w3l-testimonial">
+      <div class="container">
+        <div class="w3ls-heading">
+          <h3>Testimonial</h3>
+        </div>
+        <div class="w3-agile-testimonial">
+          <div class="slider">
+            <div class="callbacks_container">
+              <ul class="rslides callbacks callbacks1" id="slider3">
+                <li>
+                  <div class="testimonial-img-grid">
+                    <div class="testimonial-img t-img1">
+                      <img src="/static/imagesw/ts1.jpg" alt="" />
+                    </div>
+                    <div class="testimonial-img">
+                      <img src="/static/imagesw/ts2.jpg" alt="" />
+                    </div>
+                    <div class="testimonial-img t-img2">
+                      <img src="/static/imagesw/ts3.jpg" alt="" />
+                    </div>
+                    <div class="clearfix"> </div>
+                  </div>
+                  <div class="testimonial-img-info">
+                    <p><i class="fa fa-quote-left" aria-hidden="true"></i> Aenean tincidunt lectus id ipsum congue egestas. Pellentesque a molestie dui, vitae tincidunt odio. Morbi nisi sapien, tincidunt et porttitor ac, tempor vitae orci. In ipsum leo, molestie ut lacus in, consequat efficitur metus. Suspendisse porttitor nulla arcu, eget iaculis nibh lobortis in. Duis egestas placerat massa, sit amet mattis dui pretium id. <i class="fa fa-quote-right" aria-hidden="true"></i></p>
+                    <h5>Peter Guptill</h5>
+                    <h6>Proin blandit</h6>
+                  </div>
+                </li>
+                <li>
+                  <div class="testimonial-img-grid">
+                    <div class="testimonial-img t-img1">
+                      <img src="/static/imagesw/ts2.jpg" alt="" />
+                    </div>
+                    <div class="testimonial-img">
+                      <img src="/static/imagesw/ts3.jpg" alt="" />
+                    </div>
+                    <div class="testimonial-img t-img2">
+                      <img src="/static/imagesw/ts1.jpg" alt="" />
+                    </div>
+                    <div class="clearfix"> </div>
+                  </div>
+                  <div class="testimonial-img-info">
+                    <p><i class="fa fa-quote-left" aria-hidden="true"></i> Sed accumsan nisl ut ex fermentum, eget sodales eros elementum. Curabitur dapibus placerat quam in vehicula. Morbi fermentum sodales varius. Sed mauris massa, sodales in lectus non, tempus pellentesque quam. Phasellus lobortis magna ante, eget finibus magna tristique a. Integer sagittis convallis rhoncus. Sed imperdiet augue sit amet enim accumsan <i class="fa fa-quote-right" aria-hidden="true"></i></p>
+                    <h5>Mary Jane</h5>
+                    <h6>Lorem ipsum</h6>
+                  </div>
+                </li>
+                <li>
+                  <div class="testimonial-img-grid">
+                    <div class="testimonial-img t-img1">
+                      <img src="/static/imagesw/ts3.jpg" alt="" />
+                    </div>
+                    <div class="testimonial-img">
+                      <img src="/static/imagesw/ts1.jpg" alt="" />
+                    </div>
+                    <div class="testimonial-img t-img2">
+                      <img src="/static/imagesw/ts2.jpg" alt="" />
+                    </div>
+                    <div class="clearfix"> </div>
+                  </div>
+                  <div class="testimonial-img-info">
+                    <p><i class="fa fa-quote-left" aria-hidden="true"></i> unc ornare a quam et tincidunt. Aliquam et magna id lectus egestas sollicitudin. Quisque sed rhoncus magna. Morbi a orci mi. Suspendisse potenti. Integer in augue turpis. Aenean massa dolor, feugiat et tortor vitae, tempor fringilla odio. Quisque at arcu ullamcorper, ullamcorper quam et, egestas nisi. Mauris aliquam hendrerit consequat. <i class="fa fa-quote-right" aria-hidden="true"></i></p>
+                    <h5>Steven Wilson</h5>
+                    <h6>Proin blandit</h6>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="clearfix"> </div>
+            <script>
+                  // You can also use "$(window).load(function() {"
+                  $(function () {
+                    // Slideshow 4
+                    $("#slider3").responsiveSlides({
+                    auto: true,
+                    pager:false,
+                    nav:false,
+                    speed: 500,
+                    namespace: "callbacks",
+                    before: function () {
+                      $('.events').append("<li>before event fired.</li>");
+                    },
+                    after: function () {
+                      $('.events').append("<li>after event fired.</li>");
+                    }
+                    });
+                
+                  });
+            </script>
+            <!--banner Slider starts Here-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //testimonial -->
+  <!-- news -->
+  <div class="news" id="news">
+    <div class="w3-news-top">
+      <h3>N</h3>
+    </div>
+    <div class="w3l-about w3l-news">
+      <div class="container">
+        <div class="w3ls-heading">
+          <h3>News</h3>
+        </div>
+        <div class="wthree-news-grids">
+          <div class="col-md-6 agile-news-right-info">
+            <div class="col-sm-4 agile-news-img">
+              
+            </div>
+            <div class="col-sm-8 agile-news-img-info">
+              <h5><a href="#" data-toggle="modal" data-target="#myModal">Lorem ipsum dolor</a></h5>
+              <div class="agileits-w3layouts-border"> </div>
+              <p>Sed accumsan nisl ut ex fermentum, eget sodales eros elementum. Curabitur dapibus placerat quam in vehicula. Morbi fermentum sodales varius.</p>
+              <h6><i class="fa fa-calendar" aria-hidden="true"></i> 24th Dec,2016</h6>
+            </div>
+            <div class="clearfix"> </div>
+          </div>
+          <div class="col-md-6 agile-news-right-info">
+            <div class="col-sm-4 agile-news-img agile-news-img1">
+                
+            </div>
+            <div class="col-sm-8 agile-news-img-info">
+              <h5><a href="#" data-toggle="modal" data-target="#myModal">Lorem ipsum dolor</a></h5>
+              <div class="agileits-w3layouts-border"> </div>
+              <p>Nunc ornare a quam et tincidunt. Aliquam et magna id lectus egestas sollicitudin. Quisque sed rhoncus magna. Morbi a orci mi.</p>
+              <h6><i class="fa fa-calendar" aria-hidden="true"></i> 24th Dec,2016</h6>
+            </div>
+            <div class="clearfix"> </div>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //news -->
+  <!-- modal -->
+  <div class="modal about-modal fade" id="myModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header"> 
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>            
+            <h4 class="modal-title">Global <span>Tours</span></h4>
+            <h5>24 Sept 2017</h5>
+          </div> 
+          <div class="modal-body">
+          <div class="agileits-w3layouts-info">
+            <img src="/static/imagesw/1a.jpg" alt="" />
+            <p>Duis venenatis, turpis eu bibendum porttitor, sapien quam ultricies tellus, ac rhoncus risus odio eget nunc. Pellentesque ac fermentum diam. Integer eu facilisis nunc, a iaculis felis. Pellentesque pellentesque tempor enim, in dapibus turpis porttitor quis. Suspendisse ultrices hendrerit massa. Nam id metus id tellus ultrices ullamcorper.  Cras tempor massa luctus, varius lacus sit amet, blandit lorem. Duis auctor in tortor sed tristique. Proin sed finibus sem.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //modal -->
+
+  <!-- team -->
+  <div class="team">
+    <div class="w3-team-top">
+      <h3>T</h3>
+    </div>
+    <div class="w3l-about w3l-team">
+      <div class="container">
+        <div class="w3ls-heading">
+          <h3>Team</h3>
+        </div>
+        <div class="agile-team-grids">
+          <div class="col-sm-3 team-grid">
+            <div class="flip-container">
+              <div class="flipper">
+                <div class="front">
+                  <img src="/static/imagesw/t1.jpg" alt="" />
+                </div>
+                <div class="back">
+                  <h4>Peter Parker</h4>
+                  <p>Vestibulum </p>
+                  <div class="w3l-social">
+                    <ul>
+                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 team-grid">
+            <div class="flip-container">
+              <div class="flipper">
+                <div class="front">
+                  <img src="/static/imagesw/t2.jpg" alt="" />
+                </div>
+                <div class="back">
+                  <h4>Steven Wilson</h4>
+                  <p>Quisque vitae</p>
+                  <div class="w3l-social">
+                    <ul>
+                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 team-grid">
+            <div class="flip-container">
+              <div class="flipper">
+                <div class="front">
+                  <img src="images/t3.jpg" alt="" />
+                </div>
+                <div class="back">
+                  <h4>Johan Botha</h4>
+                  <p>Nulla molestie</p>
+                  <div class="w3l-social">
+                    <ul>
+                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 team-grid">
+            <div class="flip-container">
+              <div class="flipper">
+                <div class="front">
+                  <img src="images/t4.jpg" alt="" />
+                </div>
+                <div class="back">
+                  <h4>Mary Jane</h4>
+                  <p>Aliquam non</p>
+                  <div class="w3l-social">
+                    <ul>
+                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- //team -->
+  <!-- subscribe -->
+  <div class="subscribe">
+    <div class="w3-subscribe-top">
+      <h3>S</h3>
+    </div>
+    <div class="w3l-about w3l-team">
+      <div class="container">
+        <div class="w3ls-heading">
+          <h3>Subscribe</h3>
+        </div>
+        <div class="w3-agile-subscribe">
+          <p>Subscribe to our email newsletter free useful updates everyday in your mailbox</p>
+          <form action="#" method="post">
+            <input type="email" id="mc4wp_email" name="EMAIL" placeholder="Enter your email here" required="">
+            <input type="submit" value="Subscribe">
+          </form>
+          <h5>OR</h5>
+          <div class="agileinfo-social-grids">
+            <ul>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-rss"></i></a></li>
+              <li><a href="#"><i class="fa fa-vk"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //subscribe -->
+  <!-- map -->
+  <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d366417.1205943117!2d-118.4272152627014!3d34.0091834751898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos+Angeles%2C+CA%2C+USA!5e0!3m2!1sen!2sin!4v1472444937012" style="border:0" allowfullscreen></iframe>
+  </div>
+  <!-- //map -->
+  <!-- contact -->
+  <div class="contact" id="contact">
+    <div class="w3-contact-top">
+      <h3>C</h3>
+    </div>
+    <div class="w3l-about w3l-team">
+      <div class="container">
+        <div class="w3ls-heading">
+          <h3>Contact</h3>
+        </div>
+        <div class="agile-contact-grids">
+          <div class="col-md-5 address">
+            <h4>Contact Info</h4>
+            <div class="address-row">
+              <div class="col-md-2 w3-agile-address-left">
+                <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+              </div>
+              <div class="col-md-10 w3-agile-address-right">
+                <h5>Visit Us</h5>
+                <p>123 Fourth Avenue, Seattle Wa 98104, Los Angeles </p>
+              </div>
+              <div class="clearfix"> </div>
+            </div>
+            <div class="address-row">
+              <div class="col-md-2 w3-agile-address-left">
+                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+              </div>
+              <div class="col-md-10 w3-agile-address-right">
+                <h5>Mail Us</h5>
+                <p><a href="mailto:info@example.com"> mail@example.com</a></p>
+              </div>
+              <div class="clearfix"> </div>
+            </div>
+            <div class="address-row">
+              <div class="col-md-2 w3-agile-address-left">
+                <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+              </div>
+              <div class="col-md-10 w3-agile-address-right">
+                <h5>Call Us</h5>
+                <p>+11 222 333 4444</p>
+              </div>
+              <div class="clearfix"> </div>
+            </div>
+          </div>
+          <div class="col-md-7 contact-form">
+            <form action="#" method="post">
+              <input type="text" name="First Name" placeholder="First Name" required="">
+              <input class="email" name="Last Name" type="text" placeholder="Last Name" required="">
+              <input type="text" name="Number" placeholder="Mobile Number" required="">
+              <input class="email" name="Email" type="email" placeholder="Email" required="">
+              <textarea name="Message" placeholder="Message" required=""></textarea>
+              <input type="submit" value="SUBMIT">
+            </form>
+          </div>
+          <div class="clearfix"> </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //contact -->
+  <!-- footer -->
+  <div class="footer">
+    <div class="container">
+      <div class="copyright">
+        <p>© 2017 Global Tours . All Rights Reserved | Design by <a href="http://w3layouts.com/"> W3layouts</a> </p>
+      </div>
+    </div>
+  </div>
+  <!-- //footer -->
+  <script src="/static/jsw/responsiveslides.min.js"></script>
+  <script src="/static/jsw/SmoothScroll.min.js"></script>
+  <script type="text/javascript" src="js/move-top.js"></script>
+  <script type="text/javascript" src="js/easing.js"></script>
+  <!-- here stars scrolling icon -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      /*
+        var defaults = {
+        containerID: 'toTop', // fading element id
+        containerHoverID: 'toTopHover', // fading element hover id
+        scrollSpeed: 1200,
+        easingType: 'linear' 
+        };
+      */
+                
+      $().UItoTop({ easingType: 'easeOutQuart' });
+                
+      });
+  </script>
+<!-- //here ends scrolling icon -->
+</body> 
+</html>

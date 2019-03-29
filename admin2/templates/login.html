@@ -1,0 +1,59 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tourism in Kerala</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<meta name="keywords" content="Ribbon Login Form Responsive Templates, Iphone Compatible Templates, Smartphone Compatible Templates, Ipad Compatible Templates, Flat Responsive Templates"/>
+<link href="/static/cssl/style.css" rel='stylesheet' type='text/css' />
+<!--webfonts-->
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+<!--/webfonts-->
+</head>
+<body>
+<!--start-main-->
+
+<h1>Welcome To<span>!ncredible Kerala...</span></h1>
+<div class="login-box">
+   <form  method="post" enctype="multipart/form-data">
+   {% csrf_token %}
+         
+            {{form.username}}
+            {{form.password1}}
+<div class="btn">
+      <script src='https://www.google.com/recaptcha/api.js'></script>
+    <div class="g-recaptcha" data-sitekey="6Lftv5kUAAAAAEgKs3iFJv7bA-2o4b5gk0jNBlNa"></div>
+   <input type="submit" value="LOGIN" >
+</div>
+      </form>
+      
+     
+  
+      <div class="remember">
+         <a href="#"><p>Remember me</p></a>
+         <h4>Forgot your password?<a href="#">Click here.</a></h4>
+      </div>
+
+     <div class="btn">
+          <span class="txt2 p-b-10">
+            <a href="{% url 'social:begin' 'github' %}">Login with GitHub</a><br> 
+                     Don’t have an account?
+        <a href="{% url 'signup' %}" class="txt3 bo1 hov1">sign up</a>
+         <!-- <input type="submit" value="SIGN UP" > -->
+      </span>
+      </div>
+    <div class="clear"> </div>  
+<!--//End-login-form-->
+<!--start-copyright-->
+<div class="copy-right">
+   <p>Template by <a href="http://w3layouts.com">w3layouts</a></p> 
+</div>
+<!--//end-copyright-->     
+</body>
+</html>s

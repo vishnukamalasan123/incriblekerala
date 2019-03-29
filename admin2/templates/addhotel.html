@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+<form action='.' method='post' enctype="multipart/form-data">
+
+	{% csrf_token %}
+
+	{{form1.as_p}}
+	{{form2.as_p}}
+
+
+	<a href="{% url 'login' %}" id="login_pop"><button> Sig Up</button></a>
+</form>
+
+</body>
+</html>

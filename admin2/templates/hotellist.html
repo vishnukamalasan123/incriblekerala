@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hotel booking list</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <center>
+  <H1>hotel booking user  list</H1>
+</center>
+</head>
+<style>
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+  <body>
+     <table id='customers'>
+  	<div class='responsive'>
+      <tr>
+   <th>userdata</th>
+    <th>destination</th>
+        <th>check_in</th>
+        <th>check_out</th>
+        <th>adults</th>
+        <th>children</th>
+        <th>Created_on</th>
+
+      </tr>
+
+	{%for i in hotel_list %}
+  <tr>
+<td>{{i.userdata}}</td>
+ <td>{{i.destination}}</td>
+	<td>{{i.check_in}}</td>
+	<td>{{i.check_out}}</td>
+ <td><img src="{{i.image.url}}" width="20" height="20"></td> 
+<td>{{i.adults}}</td>
+  <!-- <td><a href="{{i.file.url}}">Downlod</a></td> -->
+
+ <td>{{i.children}}</td>
+  <td>{{i.created_on}}</td>
+	{% endfor %}
+</tr>
+</div>
+</table>
+</body>
+</html>

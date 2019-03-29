@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="/static/imagesc/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/static/vendorc/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/static/fontsc/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/static/fontsc/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/static/vendorc/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/static/vendorc/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/static/vendorc/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/static/vendorc/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/static/vendorc/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/static/cssc/util.css">
+	<link rel="stylesheet" type="text/css" href="/static/cssc/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+<form action="#" method="post" enctype="multipart/form-data">
+   {% csrf_token %}
+
+	<div class="container-contact100">
+		<div class="contact100-map" id="google_map" data-map-x="10.8505" data-map-y="76.2711" data-pin="/static/imagesc/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
+
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form">
+				<span class="contact100-form-title">
+					Contact Us
+				</span>
+                 <p>Full name</p>
+				<div class="wrap-input100 validate-input" data-validate="Name is required">
+					
+					<!-- <input class="input100" type="text" name="name" placeholder="Full Name"> -->
+					
+					{{form.full_name}}
+					<!-- <span class="focus-input100-1"></span>
+					<span class="focus-input100-2"></span> -->
+				</div>
+               <p>Your E-mail</p>
+				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					{{form.email}}
+					<!-- <input class="input100" type="text" name="email" placeholder="Email"> -->
+					<span class="focus-input100-1"></span>
+					<span class="focus-input100-2"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Message is required">
+					{{form.message_1}}
+<!-- 					<textarea class="input100" name="message" placeholder="Your Message"></textarea>
+ -->					<span class="focus-input100-1"></span>
+					<span class="focus-input100-2"></span>
+				</div>
+                 
+				<div class="contact100-form-checkbox">
+					<input class="input-checkbox100" id="ckb1" type="checkbox" name="copy-mail">
+					<label class="label-checkbox100" for="ckb1">
+						Send copy to my-email
+					</label>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn">
+						Send Email
+					</button>
+					<div class="btn">
+          <span class="txt2 p-b-10">
+        <a href="{% url 'home' %}" class="txt3 bo1 hov1">back</a>
+         <!-- <input type="submit" value="SIGN UP" > -->
+      </span>
+      </div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+	<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+	<script src="/static/vendorc/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="/static/vendorc/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="/static/vendorc/bootstrap/js/popper.js"></script>
+	<script src="/static/vendorc/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="/static/vendorc/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="/static/vendorc/daterangepicker/moment.min.js"></script>
+	<script src="/static/vendorc/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="/static/vendorc/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes"></script>
+	<script src="/static/jsc/map-custom.js"></script>
+<!--===============================================================================================-->
+	<script src="/static/jsc/map-custom.js"></script>
+	<script src="/static/jsc/main.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+</body>
+</html>
